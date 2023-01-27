@@ -32,3 +32,10 @@ def show_predictions_page(companies):
       st.header(f"The estimated salary is ₹{predictions[0]:.2f}")
 
 
+
+def main():
+   companies =  load_model_data()
+   show_predictions_page(companies)
+
+if __name__ == "__main__":
+    main()
