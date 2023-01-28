@@ -29,7 +29,7 @@ def show_predictions_page(companies):
    res = st.button("Calculate Price")
    if res:
       predictions = model.predict(pd.DataFrame([[selected_Car_name,selected_Company,selected_year,selected_kms_driven,selected_fuel_type]],columns=['name','company','year','kms_driven','fuel_type']))
-      st.header(f"The estimated salary is ₹{predictions[0]:.2f}")
+      st.header(f"The estimated car price is ₹{predictions[0]:.2f}")
 
 
 
